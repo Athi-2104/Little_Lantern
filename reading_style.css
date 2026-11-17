@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:url('aesthetic.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.15);
+}
+
+.login-container{
+    position:relative;
+    z-index:2;
+}
+
+.login-box{
+    width:400px;
+    padding:40px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.25);
+
+    color:white;
+}
+
+.login-box h1{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    text-align:center;
+    margin-bottom:30px;
+    color:rgba(255,255,255,0.85);
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 18px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.15);
+
+    color:white;
+
+    backdrop-filter:blur(10px);
+
+    font-size:15px;
+}
+
+.input-group input::placeholder{
+    color:rgba(255,255,255,0.8);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+.options a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+button{
+    width:100%;
+    padding:14px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#d8b89b;
+    color:#4b3621;
+
+    font-weight:600;
+    font-size:16px;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    background:#e8c8ab;
+}
+
+.register{
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
+}
+
+.register a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:450px){
+
+    .login-box{
+        width:90%;
+        padding:30px;
+    }
+
+}
